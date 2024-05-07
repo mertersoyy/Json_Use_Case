@@ -1,0 +1,29 @@
+read.me
+
+I had a corrupt json data in IOT format. When I examined this data, I realized that there were 2 different corrupt json data under a single file. When starting the code to edit this file, I imported the necessary libraries.
+
+I had Python read my file path.
+
+I used a for loop to read the entire file. I tried to edit the json file and obtain a proper json structure by using a for loop in the array.
+
+I defined the headers I needed from the structure I obtained by taking the necessary headers under the measurement section in the corrupt json file.
+
+A process was created in which it extracts the timestamps it sees using If-Else in the for loop, defines the key value if it cannot be seen, inserts it into the loop again, and continues until the timestamps are extracted.
+
+We created a dataframe using the pandas library for the rows. If the value seen after the row, the number of rows is increased with the appendler.
+
+When I looked at the first file, I noticed that the process was done by merging the two json files into a single file using concet.
+
+As a result of these operations, our json file turned into a NESTED structure.
+
+By associating the dataframe with json, we made our file flatten. By printing the sample data and saving the flat json and csv version to my computer, I was able to control it with the second method.
+
+I used parsing to make large data more functional. I used orient=records to extract existing records in the Json output.
+
+I went to the Postgresql connection section and established the Postgresql connection with Python.
+
+After creating the necessary tables for Postgresql, I created a tuple to transfer my data, which was waiting flat in the existing dataframe, there. While creating this tuple, I put it in a loop so that it transferred all the data inside.
+
+Lastly, I tested the connection and closed it.
+
+
